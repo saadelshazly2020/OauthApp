@@ -5,12 +5,13 @@ using System.Web.Http;
 
 namespace Delat
 {
+
     public static class WebApiConfig
     {
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-
+            //api
             // Web API routes
             config.MapHttpAttributeRoutes();
 
