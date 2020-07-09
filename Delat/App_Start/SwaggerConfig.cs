@@ -20,7 +20,7 @@ namespace Delat
 {
     c.DocumentFilter<AuthTokenOperation>();
     c.OperationFilter<AuthorizationOperationFilter>();
-    c.SingleApiVersion("v1", "TS_EF_API");
+    c.SingleApiVersion("v1", "OAuth2 Api Security App Demo");
     //c.OAuth2("oauth2")
     //                    .Description("OAuth2 Implicit Grant")
     //                    .Flow("password")

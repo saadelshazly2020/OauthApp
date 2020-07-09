@@ -13,6 +13,9 @@ namespace Delat.Controllers
     {
         DeltaDbContext db = new DeltaDbContext();
         // GET: api/Employee
+        /// <summary>
+        /// Return all Employee based on hiring date
+        /// </summary>
         public IHttpActionResult Get()
         {
             return Json(db.Employees.Select(x => new
@@ -24,7 +27,10 @@ namespace Delat.Controllers
             }).OrderByDescending(x => x.HireDate));
         }
         // POST: api/Employee
-        public HttpStatusCode Post([FromBody]EmpDTO newEmp)
+        /// <summary>
+        /// Add new Employee
+        /// </summary>
+        public HttpStatusCode Add([FromBody]EmpDTO newEmp)
         {
             try
             {
